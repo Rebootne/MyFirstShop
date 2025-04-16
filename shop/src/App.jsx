@@ -5,7 +5,7 @@ import Header from './header'
 import Items from './items'
 import Categories from './Categories'
 import ShowFullItem from './ShowFullItem'
-import item from './item'
+import Info from './info'
 
 class App extends React.Component {
   constructor(props) {
@@ -81,6 +81,7 @@ class App extends React.Component {
       <Items onShowItem={this.onShowItem} items={this.state.currentItems} onAdd={this.addToOrder}/>
 
       {this.state.showFullItem && <ShowFullItem  onAdd={this.addToOrder} onShowItem={this.onShowItem} item={this.state.fullItem}/>}
+      <Info />
       <Footer />
       </div>
     )
