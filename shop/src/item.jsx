@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import Items from './items'
 
 export default class item extends Component {
   render() {
     return (
       <div className='item'>
-        <img src={'./public/img/' + this.props.item.img}/>
+        <img src={'./public/img/' + this.props.item.img} onClick={() => this.props.onShowItem(this.props.item)}/>
         <h2>{this.props.item.title}</h2>
         <p>{this.props.item.desc}</p>
         <b>{this.props.item.price}$</b>
