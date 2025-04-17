@@ -293,3 +293,94 @@ header .shop-cart .summa {
    transform: scale(1.1);
    border-color: silver;
 }
+
+
+/* --------------------------------------------- ИНФОРМАЦИЯ О НАС --------------------------------------------------- */
+
+/* info.css - Стили только для компонента "О нас" */
+.info-component {
+   max-width: 1280px;
+   font-family: "Montserrat", sans-serif;
+ }
+ 
+ .info-component .main-info {
+   background: white;
+   padding: 40px;
+   border-radius: 10px;
+   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+ }
+ 
+ .info-component .heder-info {
+   font-size: 2.2rem;
+   color: #2c3e50;
+   text-align: center;
+   margin-bottom: 30px;
+   font-weight: 600;
+   position: relative;
+ }
+ 
+ .info-component .heder-info::after {
+   content: '';
+   display: block;
+   width: 80px;
+   height: 3px;
+   background: #e74c3c;
+   margin: 15px auto 0;
+ }
+ 
+ .info-component h2 {
+   font-size: 1.5rem;
+   color: #34495e;
+   margin: 25px 0 15px;
+   font-weight: 600;
+ }
+ 
+ .info-component p {
+   font-size: 1rem;
+   line-height: 1.7;
+   margin-bottom: 15px;
+   color: #555;
+ }
+ 
+ .info-component ul {
+   list-style: none;
+   margin: 25px 0;
+ }
+ 
+ .info-component ul li {
+   padding-left: 30px;
+   margin-bottom: 12px;
+   position: relative;
+   line-height: 1.6;
+ }
+ 
+ .info-component ul li::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 8px;
+   width: 16px;
+   height: 16px;
+   background-color: #e74c3c;
+   mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat center;
+ }
+ 
+ .info-component b {
+   color: #e74c3c;
+   font-weight: 600;
+ }
+ 
+ /* Адаптивность */
+ @media (max-width: 768px) {
+   .info-component .main-info {
+     padding: 25px;
+   }
+   
+   .info-component .heder-info {
+     font-size: 1.8rem;
+   }
+   
+   .info-component h2 {
+     font-size: 1.3rem;
+   }
+ }
